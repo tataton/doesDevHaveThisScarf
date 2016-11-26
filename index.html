@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Does Dev Have This Scarf?</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1>Does Dev Have This Scarf?</h1>
+    </header>
+    <main>
+      <section id="invReport"></section>
+      <section>
+        <h2>Would you like to add a scarf to Dev's inventory?</h2>
+        <input id="addName" type="text" placeholder="Name of scarf to add">
+        <input id="addType" type="text" placeholder="Type of scarf">
+        <p> What colors are in the new scarf? (Check one or more boxes.)</p>
+        <form id="colorAdd"></form>
+        <p> What adjectives describe the scarf? (Check one or more boxes.)</p>
+        <form id="charAdd"></form>
+        <button onclick="addScarf()">Add this scarf!</button>
+        <button onclick="clearAdd()">Clear selections</button>
+      </section>
+      <section>
+        <h2>Would you like to search for a scarf in the inventory by color or characteristic?</h2>
+        <p>What kind of scarf would you like to find?</p>
+        <form id="colorSearch" name="colorSearched"></form>
+        <br />
+        <form id="charSearch" value="charSearched"></form>
+        <button onclick="searchScarf()">Seach for this scarf!</button>
+        <button onclick="clearSearch()">Clear selections</button>
+      </section>
+      <section id="searchReport"></section>
+    </main>
+  </body>
+</html>
